@@ -100,6 +100,10 @@
   border-radius: 0 0 50px 0;
 }
 
+.text-success {
+  color: $color-success !important;
+}
+
 @media (max-width: 991px) {
   .tools-panel {
     width: 100%;
