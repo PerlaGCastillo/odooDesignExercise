@@ -93,14 +93,21 @@
 
 .tools-card::after {
   content: "";
+  width: 120px;
+  height: 80px;
   position: absolute;
   right: -6rem;
   bottom: -3rem;
-  width: 120px;
-  height: 80px;
   border-bottom: 2px dashed rgba($color-warning, 0.4);
   border-right: 2px dashed rgba($color-warning, 0.4);
   border-radius: 0 0 50px 0;
+}
+
+.infinite-card {
+  color: #fff;
+  background: $color-secondary;
+  border-radius: 0 5rem;
+  padding: 3rem 5rem;
 }
 
 .text-success {
