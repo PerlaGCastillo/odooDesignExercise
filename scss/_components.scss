@@ -38,12 +38,15 @@
     opacity: 0.12;
   }
 }
-.badge-tools {
+.badge-warning {
   background: $color-warning;
   color: #111;
 }
-.badge-features {
+.badge-success {
   background: $color-success;
+}
+.badge-primary {
+  background: $color-primary;
 }
 
 /* floatting img: tried to avoid an spaghetti scss but I really need to fix it without bootstrap */
@@ -102,6 +105,9 @@
 
 .text-success {
   color: $color-success !important;
+}
+.text-warning {
+  color: $color-warning !important;
 }
 
 @media (max-width: 991px) {
