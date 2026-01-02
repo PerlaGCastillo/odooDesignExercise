@@ -24,7 +24,7 @@
     <!-- "what works well" in this nav mock-up:
       Clear structure navigation, readable hierarchy, and skew visual separation give it a pinch of flow -->
 
-    <header class="hero skew-bg text-white" id="home">
+    <header class="hero text-white" id="home">
       <nav class="navbar navbar-expand-lg navbar-dark py-3">
         <div class="container">
           <a class="navbar-brand" href="https://www.odoo.com/">
@@ -124,7 +124,7 @@
                       height="28"
                       alt="Mastercard"
                     />
-                    <span class="badge bg-success">Active</span>
+                    <span class="badge badge-brand-success">Active</span>
                   </div>
 
                   <small class="opacity-75">CARD NUMBER</small>
@@ -214,7 +214,7 @@
           </div>
 
           <div class="col-lg-6">
-            <span class="badge badge-warning mb-3">Tools</span>
+            <span class="badge badge-brand-warning mb-3">Tools</span>
             <h2 class="fw-bold">We build for designers<br />and developers</h2>
             <p class="text-muted">
               Get components and examples, including tons of variables that will
@@ -230,12 +230,12 @@
       <div class="container">
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
-            <span class="badge badge-success mb-3">Features</span>
+            <span class="badge badge-brand-success mb-3">Features</span>
             <h3 class="fw-bold mb-4">
               Get components and examples, including tons of variables that will
               help you grow your business.
             </h3>
-            <ul class="list-unstyled text-success">
+            <ul class="list-unstyled text-brand-success">
               <li class="mb-2">
                 <i class="bi bi-check-circle-fill me-2"></i>
                 Perfect for modern startups
@@ -280,7 +280,7 @@
                     alt="User"
                   />
                   <div class="card-body d-flex justify-content-between align-items-center">
-                     <i class="bi bi-check-circle-fill text-warning fs-1"></i>  Jimmy Hendrix  <i class="bi bi-heart"></i>
+                     <i class="bi bi-check-circle-fill text-brand-warning fs-1"></i>  Jimmy Hendrix  <i class="bi bi-heart"></i>
                   </div>
                 </div>
                 <div class="card shadow-sm mt-3">
@@ -344,7 +344,7 @@
           </div>
         </div>
          <div class="col-lg-6">
-            <span class="badge badge-primary mb-3">Technology</span>
+            <span class="badge badge-brand-primary mb-3">Technology</span>
             <h2 class="fw-bold">
               We use the latest <br />
               technologies on the market
@@ -363,7 +363,7 @@
       <div class="container">
         <div class="row align-items-center g-5 py-5 mb-5">
           <div class="col-lg-6">
-            <span class="badge badge-warning mb-3">Easy to install</span>
+            <span class="badge badge-brand-warning mb-3">Easy to install</span>
             <h2 class="fw-bold">Download, install and run.</h2>
             <p class="text-muted mb-5">
              Get components and examples, including tons of variables <br /> that will help you grow your business.
@@ -423,9 +423,9 @@
       </div>
     </section>
     <!--"what works on the awards section": avoiding JS and just using bootstrap for the hover saves time-->
-    <section class="awards skew-bg py-5 my-5" id="awards">
+    <section class="awards py-5" id="awards">
         <div class="container">
-            <span class="badge badge-primary mb-3">Awards</span>
+            <span class="badge badge-brand-primary mb-3">Awards</span>
             <p class="mb-5 ">Awards for design, creativity and innovation on the Internet</p>
             <div class="row g-4 d-flex justify-content-center py-5">
                 <div class="col-6 col-md-4 col-lg">
@@ -505,159 +505,226 @@
             </div>
         </div>
     </section>
-
+    <!-- "faq worth it": Two columns reduce scroll fatigue -->
     <section class="py-5" id="faq">
-    <div class="container py-5">
-        <div class="text-center mb-5">
-        <h2 class="fw-bold">Helpful answers</h2>
-        <p class="text-muted">Start building fast, beautiful, and modern-looking websites in no time.</p>
-        </div>
-
-        <div class="row g-5 ">
-            <div class="col-lg-6">
-                <div class="accordion" id="faqLeft">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
-                    type="button" data-bs-toggle="collapse" data-bs-target="#faqOne"
-                    >  
-                    <div class="">
-                        <i class="bi bi-file-earmark"></i>
-                    Which license do I need?
-                    </div>
-
-                        <span class="accordion-icon">
-                            <i class="bi bi-plus-lg icon-plus"></i>
-                            <i class="bi bi-dash-lg icon-minus"></i>
-                        </span>
-                    </button>
-                    </h2>
-                    <div id="faqOne" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
-                    <div class="accordion-body">Choose a license depending on your project scale and distribution.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
-                    type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo"
-                    >  
-                    <div class="">
-                        <i class="bi bi-lock"></i>
-                    How do I get access to my database?
-                    </div>
-
-                        <span class="accordion-icon">
-                            <i class="bi bi-plus-lg icon-plus"></i>
-                            <i class="bi bi-dash-lg icon-minus"></i>
-                        </span>
-                    </button>
-                    </h2>
-                    <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
-                    <div class="accordion-body">Secure credentials are available in your account dashboard.</div>
-                    </div>
-                </div>
-                
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
-                    type="button" data-bs-toggle="collapse" data-bs-target="#faqThree"
-                    >  
-                    <div class="">
-                        <i class="bi bi-folder"></i>
-                    How do I see previous orders?
-                    </div>
-
-                        <span class="accordion-icon">
-                            <i class="bi bi-plus-lg icon-plus"></i>
-                            <i class="bi bi-dash-lg icon-minus"></i>
-                        </span>
-                    </button>
-                    </h2>
-                    <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
-                    <div class="accordion-body">Secure credentials are available in your account dashboard.</div>
-                    </div>
-                </div>
-                </div>
+        <div class="container py-5">
+            <div class="text-center mb-5">
+            <h2 class="fw-bold">Helpful answers</h2>
+            <p class="text-muted">Start building fast, beautiful, and modern-looking websites in no time.</p>
             </div>
 
-            <div class="col-lg-6">
-                <div class="accordion" id="faqRight">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
-                    type="button" data-bs-toggle="collapse" data-bs-target="#faqFour"
-                    >  
-                    <div class="">
-                        <i class="bi bi-file-earmark"></i>
-                    Which license do I need?
-                    </div>
+            <div class="row g-5 ">
+                <div class="col-lg-6">
+                    <div class="accordion" id="faqLeft">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faqOne"
+                        >  
+                        <div class="">
+                            <i class="bi bi-file-earmark"></i>
+                        Which license do I need?
+                        </div>
 
-                        <span class="accordion-icon">
-                            <i class="bi bi-plus-lg icon-plus"></i>
-                            <i class="bi bi-dash-lg icon-minus"></i>
-                        </span>
-                    </button>
-                    </h2>
-                    <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqRight">
-                    <div class="accordion-body">Choose a license depending on your project scale and distribution.</div>
+                            <span class="accordion-icon">
+                                <i class="bi bi-plus-lg icon-plus"></i>
+                                <i class="bi bi-dash-lg icon-minus"></i>
+                            </span>
+                        </button>
+                        </h2>
+                        <div id="faqOne" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                        <div class="accordion-body">Choose a license depending on your project scale and distribution.</div>
+                        </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
-                    type="button" data-bs-toggle="collapse" data-bs-target="#faqFive"
-                    >  
-                    <div class="">
-                        <i class="bi bi-lock"></i>
-                    How do I get access to my database?
-                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo"
+                        >  
+                        <div class="">
+                            <i class="bi bi-lock"></i>
+                        How do I get access to my database?
+                        </div>
 
-                        <span class="accordion-icon">
-                            <i class="bi bi-plus-lg icon-plus"></i>
-                            <i class="bi bi-dash-lg icon-minus"></i>
-                        </span>
-                    </button>
-                    </h2>
-                    <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqRight">
-                    <div class="accordion-body">Secure credentials are available in your account dashboard.</div>
+                            <span class="accordion-icon">
+                                <i class="bi bi-plus-lg icon-plus"></i>
+                                <i class="bi bi-dash-lg icon-minus"></i>
+                            </span>
+                        </button>
+                        </h2>
+                        <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                        <div class="accordion-body">Secure credentials are available in your account dashboard.</div>
+                        </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
-                    type="button" data-bs-toggle="collapse" data-bs-target="#faqSix"
-                    >  
-                    <div class="">
-                        <i class="bi bi-folder"></i>
-                    How do I see previous orders?
-                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faqThree"
+                        >  
+                        <div class="">
+                            <i class="bi bi-folder"></i>
+                        How do I see previous orders?
+                        </div>
 
-                        <span class="accordion-icon">
-                            <i class="bi bi-plus-lg icon-plus"></i>
-                            <i class="bi bi-dash-lg icon-minus"></i>
-                        </span>
-                    </button>
-                    </h2>
-                    <div id="faqSix" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
-                    <div class="accordion-body">Secure credentials are available in your account dashboard.</div>
+                            <span class="accordion-icon">
+                                <i class="bi bi-plus-lg icon-plus"></i>
+                                <i class="bi bi-dash-lg icon-minus"></i>
+                            </span>
+                        </button>
+                        </h2>
+                        <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                        <div class="accordion-body">Secure credentials are available in your account dashboard.</div>
+                        </div>
+                    </div>
                     </div>
                 </div>
-                </div>
-            </div>  
-        </div>
-        <div class="row">
-            <div class="text-center mt-5">
-                <p class="fw-bold">I want to start a new project.</p>
-                <div class="d-flex justify-content-center gap-3">
-                    <a class="btn btn-primary">Buy now <i class="bi bi-arrow-right ms-1"></i>
-                    </a>
-                    <a class="btn btn-light">Learn more</a>
+
+                <div class="col-lg-6">
+                    <div class="accordion" id="faqRight">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faqFour"
+                        >  
+                        <div class="">
+                            <i class="bi bi-file-earmark"></i>
+                        Which license do I need?
+                        </div>
+
+                            <span class="accordion-icon">
+                                <i class="bi bi-plus-lg icon-plus"></i>
+                                <i class="bi bi-dash-lg icon-minus"></i>
+                            </span>
+                        </button>
+                        </h2>
+                        <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                        <div class="accordion-body">Choose a license depending on your project scale and distribution.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faqFive"
+                        >  
+                        <div class="">
+                            <i class="bi bi-lock"></i>
+                        How do I get access to my database?
+                        </div>
+
+                            <span class="accordion-icon">
+                                <i class="bi bi-plus-lg icon-plus"></i>
+                                <i class="bi bi-dash-lg icon-minus"></i>
+                            </span>
+                        </button>
+                        </h2>
+                        <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                        <div class="accordion-body">Secure credentials are available in your account dashboard.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faqSix"
+                        >  
+                        <div class="">
+                            <i class="bi bi-folder"></i>
+                        How do I see previous orders?
+                        </div>
+
+                            <span class="accordion-icon">
+                                <i class="bi bi-plus-lg icon-plus"></i>
+                                <i class="bi bi-dash-lg icon-minus"></i>
+                            </span>
+                        </button>
+                        </h2>
+                        <div id="faqSix" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                        <div class="accordion-body">Secure credentials are available in your account dashboard.</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="row">
+                <div class="text-center mt-5">
+                    <p class="fw-bold">I want to start a new project.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a class="btn btn-primary">Buy now <i class="bi bi-arrow-right ms-1"></i></a>
+                        <a class="btn btn-light">Learn more</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-</section>
+     <!-- "what works well": the credit card background can be reused here, so we have consistency classes
+     also this is a functional footer with clear hierarchy -->
+    <footer class="footer-skew py-5 text-white">
+      <div class="container">
+        <div class="m-5 d-flex justify-content-between">
+            <div>
+                <h4 class="fw-bold">Brilliant solutions for your ideas</h4>
+            <p>Modern-looking websites.</p>
+            </div>
+            <div class="gap-3">
+                <a class="btn btn-light text-primary"><i class="bi bi-file-break"></i> Documentation</a>
+                 <a class="btn btn-primary">Purchase now </a>
+            </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <img src="assets/odoo-white.svg" height="24" class="mb-3" />
+            <p class="small text-white-50">Odoo attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects. </p>
+            <div class="d-flex justify-content-around align-items-center">
+                <i class="bi bi-dribbble"></i>
+                <i class="bi bi-github"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+            </div>
+        </div>
+            <div class="col-6 col-lg-2">
+            <h6 class="fw-semibold mb-3">Account</h6>
+            <ul class="list-unstyled footer-links text-white">
+              <li><a href="https://www.odoo.com/web/login" target="_blank"   >Profile</a></li>
+              <li><a href="https://www.odoo.com/web/login" target="_blank"  >Settings</a></li>
+              <li><a href="https://www.odoo.com/pricing" target="_blank"  >Billing</a></li>
+              <li><a href="https://www.odoo.com/web/login" target="_blank"  >Notifications</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h6 class="fw-semibold mb-3">About</h6>
+            <ul class="list-unstyled footer-links text-white">
+              <li><a href="https://www.odoo.com/page/developers-on-demand"   target="_blank">Services</a></li>
+              <li><a href="https://www.odoo.com/pricing"   target="_blank">Pricing</a></li>
+              <li><a href="https://www.odoo.com/contactus"   target="_blank">Contact</a></li>
+              <li><a href="https://www.odoo.com/jobs"   target="_blank">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="fw-semibold mb-3">Company</h6>
+            <ul class="list-unstyled footer-links text-white">
+              <li><a href="https://www.odoo.com/forum"   target="_blank">Community</a></li>
+              <li><a href="https://www.odoo.com/appointment"   target="_blank">Help center</a></li>
+              <li><a href="https://www.odoo.com/help"   target="_blank">Support</a></li>
+            </ul>
+          </div>
+      
+
+          
+        </div>
+        <hr class="my-4" />
+        <div class="d-flex justify-content-between small">
+          <span>© Odoo. All rights reserved.</span>
+          <ul class="list-inline mb-0 footer-legal">
+            <li class="list-inline-item"><a href="https://www.odoo.com/legal"    target="_blank">Terms</a></li>
+            <li class="list-inline-item"><a href="https://www.odoo.com/privacy"    target="_blank">Privacy</a></li>
+            <li class="list-inline-item"><a href="https://www.odoo.com/security"    target="_blank">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
 
     <script
