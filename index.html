@@ -24,7 +24,7 @@
     <!-- "what works well" in this nav mock-up:
       Clear structure navigation, readable hierarchy, and skew visual separation give it a pinch of flow -->
 
-    <header class="hero text-white" id="home">
+    <header class="hero skew-bg text-white" id="home">
       <nav class="navbar navbar-expand-lg navbar-dark py-3">
         <div class="container">
           <a class="navbar-brand" href="https://www.odoo.com/">
@@ -179,7 +179,7 @@
     <!-- "needs to be improved" in this tools section:
        the overlapping image hinders table reading-->
     <section class="py-5" id="tools">
-      <div class="container">
+      <div class="container py-5">
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
             <div class="tools-card">
@@ -226,7 +226,7 @@
     </section>
     <!-- "what works well" in the features section:
      two-column layout, clear propositions and colored chek icons -->
-    <section class="py-5" id="features">
+    <section class="pb-5" id="features">
       <div class="container">
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
@@ -267,7 +267,7 @@
     </section>
      <!-- "what it's good" in the technology section:
       the asymmetric layout adds depth and that the cards communicates human interaction -->
-    <section class="py-6" id="technology">
+    <section class="py-5" id="technology">
       <div class="container">
         <div class="row align-items-center align-items-center g-5">
           <div class="col-lg-6">
@@ -361,7 +361,7 @@
      there's a primary CTA buttons that invites to download the "app", message reinforced by the image -->
     <section class="py-5" id="download">
       <div class="container">
-        <div class="row align-items-center g-5 py-5">
+        <div class="row align-items-center g-5 py-5 mb-5">
           <div class="col-lg-6">
             <span class="badge badge-warning mb-3">Easy to install</span>
             <h2 class="fw-bold">Download, install and run.</h2>
@@ -422,7 +422,90 @@
         </div>
       </div>
     </section>
-    <!--"it works": avoiding JS and just using bootstrap for the hover saves time-->
+    <!--"what works on the awards section": avoiding JS and just using bootstrap for the hover saves time-->
+    <section class="awards skew-bg py-5 mb-5" id="awards">
+        <div class="container">
+            <span class="badge badge-primary mb-3">Awards</span>
+            <p class="mb-5 ">Awards for design, creativity and innovation on the Internet</p>
+
+            <div class="row g-4 d-flex justify-content-center py-5">
+                <div class="col-6 col-md-4 col-lg">
+                    <div class="award-card text-center shadow-sm ">
+                         <img
+                            src="assets/airbnb.svg"
+                            height="50"
+                            class="mb-3"
+                            alt="Airbnb"
+                        />
+                        <div class="text-warning myb-2">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star text-dark"></i>
+                        </div>
+                        <strong>4.95 out of 5 stars</strong>
+                        <small class="text-muted"> from 23 reviews</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg">
+                    <div class="award-card award-raised text-center shadow-sm">
+                         <img
+                            src="assets/amazon.svg"
+                            height="50"
+                            class="mb-3"
+                            alt="Amazon"
+                        />
+                        <p class="mb-3">They build modern-looking websites easily using Tabs.</p>
+                         <a href="#" class="fw-semibold link text-dark"> Learn more</a>
+                        </div>
+                </div>
+                 <div class="col-6 col-md-4 col-lg">
+                    <div class="award-card text-center shadow-sm">
+                         <img
+                            src="assets/slack.svg"
+                            height="50"
+                            class="mb-3"
+                            alt="Slack"
+                        />
+                        <p class="mb-3">They build modern-looking websites easily using Tabs.</p>
+                         <a href="#" class="fw-semibold link text-dark"> Learn more</a>
+                        </div>
+                </div>
+                 <div class="col-6 col-md-4 col-lg">
+                    <div class="award-card award-raised text-center shadow-sm ">
+                         <img
+                            src="assets/spotify.svg"
+                            height="50"
+                            class="mb-3"
+                            alt="Spotify"
+                        />
+                        <div class="text-warning myb-2">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star text-dark"></i>
+                        </div>
+                        <strong>4.95 out of 5 stars</strong>
+                        <small class="text-muted"> from 23 reviews</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg">
+                    <div class="award-card text-center shadow-sm">
+                         <img
+                            src="assets/paypal.svg"
+                            height="50"
+                            class="mb-3"
+                            alt="PayPal"
+                        />
+                        <p class="mb-3">They build modern-looking websites easily using Docker.</p>
+                         <a href="#" class="fw-semibold link text-dark"> Learn more</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
