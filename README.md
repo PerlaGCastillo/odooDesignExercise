@@ -53,7 +53,7 @@ If you want to recompile or make SCSS changes:
 
 - globally
   `npm i -g sass`
-- localy
+- locally
   `npm i -D sass`
 - run it!
   `sass scss/main.scss css/main.css --watch`
