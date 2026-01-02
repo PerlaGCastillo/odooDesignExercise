@@ -1,0 +1,48 @@
+/* _layout.scss */
+
+.hero {
+  position: relative;
+  padding-bottom: 8rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: $color-primary;
+    transform: skewY(-2deg);
+    transform-origin: top left;
+
+    top: -160px;
+    z-index: -1;
+  }
+}
+
+.hero-logo {
+  height: 1.9rem;
+}
+
+.footer-skew {
+  color: #fff;
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: $color-secondary;
+    transform: skewY(-2deg);
+    transform-origin: bottom right;
+    z-index: -1;
+  }
+
+  a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

@@ -1,32 +1,4 @@
 /*_components.scss*/
-.hero {
-  background: $color-primary;
-  margin-bottom: 3rem;
-}
-
-.skew-bg {
-  position: relative;
-  padding: 1rem;
-
-  &::before {
-    content: "";
-    width: 100%;
-    height: 120%;
-    position: absolute;
-    top: -4rem;
-    left: 0;
-
-    background: inherit;
-    transform: skewY(-2deg);
-    transform-origin: top left;
-    z-index: -1;
-  }
-}
-
-.hero-logo {
-  height: 1.9rem;
-}
-
 .manage-bg {
   border-radius: 1rem;
   border-bottom-right-radius: 7rem;
@@ -47,70 +19,6 @@
     opacity: 0.12;
   }
 }
-.badge-warning {
-  background: $color-warning;
-  color: #111;
-}
-.badge-success {
-  background: $color-success;
-}
-.badge-primary {
-  background: $color-primary;
-}
-
-/* floatting img: tried to avoid an spaghetti scss but I really need to fix it without bootstrap */
-
-.tools-card {
-  position: relative;
-  max-width: 80%;
-}
-
-.tools-panel {
-  width: 90%;
-  margin-left: -1.5rem;
-  padding: 2rem 2rem 2.5rem;
-  position: relative;
-  z-index: 1;
-
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: $radius-sm;
-}
-
-.tools-list li {
-  padding: $radius-lg;
-  font-size: 0.95rem;
-  border-bottom: 1.5px solid $color-warning;
-}
-
-.tools-panel small {
-  color: #6c757d;
-}
-
-.tools-image {
-  width: 62%;
-  position: absolute;
-  top: -1.25rem;
-  right: -2rem;
-  z-index: 2;
-}
-
-.tools-play {
-  position: absolute;
-  top: $radius-md;
-  right: $radius-md;
-}
-
-.tools-card::after {
-  content: "";
-  width: 120px;
-  height: 80px;
-  position: absolute;
-  right: -6rem;
-  bottom: -3rem;
-  border-bottom: 2px dashed rgba($color-warning, 0.4);
-  border-right: 2px dashed rgba($color-warning, 0.4);
-  border-radius: 0 0 50px 0;
-}
 
 .infinite-card {
   color: #fff;
@@ -119,9 +27,17 @@
   padding: 3rem 5rem;
 }
 
-.awards {
-  background: #f5f4f4ff;
-  margin-bottom: 3rem;
+.badge-brand-warning {
+  background: $color-warning;
+  color: #111;
+}
+
+.badge-brand-success {
+  background: $color-success;
+}
+
+.badge-brand-primary {
+  background: $color-primary;
 }
 
 .award-card {
@@ -138,28 +54,30 @@
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  a {
+    margin-top: auto;
+  }
+
+  &:hover {
+    background-color: rgba(white, 0.4);
+    box-shadow: 0 12px 30px rgba($color-secondary, 0.4);
+  }
 }
 
-.award-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-}
-
-.award-card p {
-  font-size: 0.9rem;
-}
-
-.award-card a {
-  margin-top: auto;
-}
 .award-raised {
   transform: translateY(-2rem);
 }
 
-.text-success {
+.text-brand-success {
   color: $color-success !important;
 }
-.text-warning {
+
+.text-brand-warning {
   color: $color-warning !important;
 }
 
@@ -181,21 +99,4 @@
 
 .accordion-button:not(.collapsed) .icon-minus {
   display: inline-block;
-}
-
-@media (max-width: 991px) {
-  .tools-panel {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .tools-image {
-    position: static;
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .tools-card::after {
-    display: none;
-  }
 }

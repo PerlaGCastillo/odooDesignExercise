@@ -1,0 +1,87 @@
+/*_sections.scss*/
+.tools-card {
+  position: relative;
+  max-width: 80%;
+}
+
+.tools-panel {
+  width: 90%;
+  margin-left: -1.5rem;
+  padding: 2rem 2rem 2.5rem;
+  position: relative;
+  z-index: 1;
+
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: $radius-sm;
+
+  small {
+    color: #6c757d;
+  }
+}
+
+.tools-list li {
+  padding: $radius-lg;
+  font-size: 0.95rem;
+  border-bottom: 1.5px solid $color-warning;
+}
+
+.tools-image {
+  width: 62%;
+  position: absolute;
+  top: -1.25rem;
+  right: -2rem;
+  z-index: 2;
+}
+
+.tools-play {
+  position: absolute;
+  top: $radius-md;
+  right: $radius-md;
+}
+
+.tools-card::after {
+  content: "";
+  width: 120px;
+  height: 80px;
+  position: absolute;
+  right: -6rem;
+  bottom: -3rem;
+  border-bottom: 2px dashed rgba($color-warning, 0.4);
+  border-right: 2px dashed rgba($color-warning, 0.4);
+  border-radius: 0 0 50px 0;
+}
+
+.awards {
+  position: relative;
+  padding-bottom: 8rem;
+  margin-top: 8rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #f5f4f4;
+    transform: skewY(-2deg);
+    transform-origin: top left;
+
+    top: -160px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 991px) {
+  .tools-panel {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .tools-image {
+    position: static;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .tools-card::after {
+    display: none;
+  }
+}
