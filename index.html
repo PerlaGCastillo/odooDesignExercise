@@ -1,13 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Odoo Design Exercise</title>
-
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Odoo design exercise</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
@@ -16,15 +21,13 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <!-- "what works well" in this nav mock-up:
+      Clear structure navigation, readable hierarchy, and skew visual separation give it a pinch of flow -->
+
     <header class="hero text-white" id="home">
       <nav class="navbar navbar-expand-lg navbar-dark py-3">
         <div class="container">
-          <a
-            class="navbar-brand"
-            href="https://www.odoo.com/"
-            target="_blank"
-            rel="noopener"
-          >
+          <a class="navbar-brand" href="https://www.odoo.com/">
             <img src="assets/odoo-white.svg" height="24" alt="Odoo" />
           </a>
 
@@ -33,9 +36,6 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#mainNav"
-            aria-controls="mainNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -60,41 +60,27 @@
             </ul>
 
             <div class="d-flex gap-2">
-              <a
-                href="https://www.odoo.com/web/login"
-                class="btn btn-link text-white fw-semibold"
-                target="_blank"
-                >Sign in</a
-              >
-              <a
-                href="https://www.odoo.com/pricing"
-                class="btn btn-light fw-semibold px-4"
-                target="_blank"
-              >
+              <a href="https://www.odoo.com/web/login" class="btn text-white fw-semibold" target="_blank">Sign in</a>
+              <a href="https://www.odoo.com/pricing" class="btn btn-light fw-semibold px-4" target="_blank">
                 <i class="bi bi-cart-fill me-1"></i> Buy now
               </a>
             </div>
           </div>
         </div>
       </nav>
-
       <section class="pb-5">
         <div class="container">
           <hr class="border-white opacity-50 mb-5" />
 
           <div class="row align-items-center g-5">
-            <div class="col-lg-7">
+            <div class="col-lg-7 col-12">
               <h1 class="display-3 fw-bold">Development<br />done right</h1>
               <p class="lead">
-                Build a beautiful, modern website with flexible components built
-                from scratch.
+                Build a beautiful, modern website with <br />flexible components
+                built from scratch.
               </p>
 
-              <a
-                href="https://www.odoo.com/page/docs"
-                class="btn btn-light btn-lg px-5 py-3 mb-4"
-                target="_blank"
-              >
+              <a href="https://www.odoo.com/page/docs" class="btn btn-light btn-lg px-5 py-3 mb-4" target="_blank">
                 Get started <i class="bi bi-arrow-right ms-1"></i>
               </a>
 
@@ -123,16 +109,12 @@
               </div>
             </div>
 
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-12">
               <div class="card shadow-lg manage-bg p-5">
                 <div class="d-flex justify-content-between mb-3">
-                  <h2 class="h6 fw-semibold mb-0">Manage cards</h2>
-                  <a
-                    href="https://www.odoo.com/pricing"
-                    class="btn btn-sm btn-outline-dark"
-                    target="_blank"
-                    >Add new</a
-                  >
+                  <h6 class="fw-semibold mb-0">Manage cards</h6>
+                  <a href="https://www.odoo.com/pricing-configurator?plan=custom#force_country=MX&price_by=yearly&pl=179&num_users=1&hosting=online&odoosh_workers=1&odoosh_storage=1&odoosh_staging=1&implementationService=self&pack=25&integrating_partner_id=0" 
+                  class="btn btn-sm btn-outline-dark" target="_blank">Add new</a>
                 </div>
 
                 <div class="credit-card text-white mb-4">
@@ -142,12 +124,12 @@
                       height="28"
                       alt="Mastercard"
                     />
-                    <span class="badge bg-success">Active</span>
+                    <span class="badge badge-brand-success">Active</span>
                   </div>
 
                   <small class="opacity-75">CARD NUMBER</small>
-                  <strong class="d-block fs-5 mb-3"
-                    >4358 · 7421 · 9256 · 6682</strong
+                  <strong class="d-block fs-3 mb-3"
+                    >4358 - 7421 - 9256 - 6682</strong
                   >
 
                   <div class="d-flex gap-4">
@@ -169,109 +151,112 @@
                     <div>
                       <strong>Starbucks</strong>
                       <div class="small text-muted">
-                        Pending · San Francisco
+                        Pending - San Francisco, United States
                       </div>
                     </div>
-                    <span class="fw-semibold">$5.50</span>
+                    <span class="fw-semibold">$5,50 USD</span>
                   </li>
                   <li
                     class="list-group-item px-0 d-flex justify-content-between"
                   >
                     <div>
                       <strong>Nike Sports</strong>
-                      <div class="small text-muted">Pending · Lisbon</div>
+                      <div class="small text-muted">
+                        Pending - Lisbon, Portugal
+                      </div>
                     </div>
-                    <span class="fw-semibold">$129.00</span>
+                    <span class="fw-semibold">$129,00 USD</span>
                   </li>
                 </ul>
-
-                <button type="button" class="btn btn-light btn-sm text-start">
-                  View all
-                </button>
+                <a href="#" class="btn btn-light btn-sm text-start">View all</a>
               </div>
             </div>
           </div>
         </div>
       </section>
     </header>
-
-    <section id="tools" class="py-5">
+    <main>
+    <!-- "needs to be improved" in this tools section:
+       the overlapping image hinders table reading-->
+    <section class="section-tools py-5" id="tools">
       <div class="container py-5">
         <div class="row align-items-center g-5">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-12">
             <div class="tools-card">
               <div class="tools-panel shadow-sm">
-                <h2 class="h5 fw-semibold mb-3">Awesome projects</h2>
-                <ul class="tools-list list-unstyled mb-0">
+                <h5 class="fw-semibold mb-3">Awesome projects</h5>
+                <ul class="tools-list list-unstyled mb-3">
                   <li class="d-flex justify-content-between">
-                    <span>Create the new logo</span><small>3:50</small>
+                    <span>Create the new logo</span>
+                    <small>3:50</small>
                   </li>
                   <li class="d-flex justify-content-between">
-                    <span>Set up the color palette</span><small>4:00</small>
+                    <span> Set up the color palette </span>
+                    <small>4:00</small>
                   </li>
                   <li class="d-flex justify-content-between">
-                    <span>Wireframe and prototype</span><small>6:50</small>
+                    <span>Wireframe and prototype </span>
+                    <small>6:50</small>
                   </li>
                 </ul>
               </div>
-
               <div class="tools-image">
                 <img
                   src="assets/img_01.jpg"
                   class="img-fluid rounded"
-                  alt="Project preview"
+                  alt="Awesome projects"
                 />
-                <a
-                  href="https://www.youtube.com/@Odoo"
-                  class="btn btn-light btn-sm fw-semibold tools-play"
-                  target="_blank"
-                >
+                <a href="https://www.youtube.com/@Odoo" class="btn btn-light btn-sm fw-semibold tools-play">
                   <i class="bi bi-play-fill me-1"></i> Play video
                 </a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-12">
             <span class="badge badge-brand-warning mb-3">Tools</span>
             <h2 class="fw-bold">We build for designers<br />and developers</h2>
             <p class="text-muted">
-              Get components and examples designed to scale with your business.
+              Get components and examples, including tons of variables that will
+              help you grow your business.
             </p>
           </div>
         </div>
       </div>
     </section>
-
-    <section id="features" class="pb-5">
+    <!-- "what works well" in the features section:
+     two-column layout, clear propositions and colored chek icons -->
+    <section class="section-features pb-5" id="features">
       <div class="container">
         <div class="row align-items-center g-5">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-12">
             <span class="badge badge-brand-success mb-3">Features</span>
-            <h2 class="fw-bold mb-4">Built for modern startups</h2>
+            <h3 class="fw-bold mb-4">
+              Get components and examples, including tons of variables that will
+              help you grow your business.
+            </h3>
             <ul class="list-unstyled text-brand-success">
               <li class="mb-2">
-                <i class="bi bi-check-circle-fill me-2"></i>Perfect for modern
-                startups
+                <i class="bi bi-check-circle-fill me-2"></i>
+                Perfect for modern startups
               </li>
               <li>
-                <i class="bi bi-check-circle-fill me-2"></i>Fully customizable
+                <i class="bi bi-check-circle-fill me-2"></i> Fully customizable
                 and scalable
               </li>
             </ul>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-12">
             <div class="position-relative">
               <img
                 src="assets/img_02.jpg"
                 class="img-fluid rounded-4"
-                alt="Team collaboration"
+                alt="Team"
               />
               <a
                 href="https://www.youtube.com/@Odoo"
                 class="btn btn-light btn-sm position-absolute top-0 start-0 m-3"
-                target="_blank"
               >
                 <i class="bi bi-play-fill me-1"></i> Play video
               </a>
@@ -280,205 +265,483 @@
         </div>
       </div>
     </section>
-
-    <section id="technology" class="py-5">
+     <!-- "what it's good" in the technology section:
+      the asymmetric layout adds depth and that the cards communicates human interaction -->
+    <section class="py-5" id="technology">
       <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <div class="row g-4">
+        <div class="row align-items-center align-items-center g-5">
+          <div class="col-lg-6 col-12">
+            <div class="row g-4 ">
               <div class="col-md-6">
-                <div class="card shadow-sm">
+                <div class="card shadow-sm mt-5">
                   <img
                     src="assets/person_03.jpg"
                     class="card-img-top"
-                    alt="Customer portrait"
+                    alt="User"
                   />
-                  <div
-                    class="card-body d-flex justify-content-between align-items-center"
-                  >
-                    <span>Jimmy Hendrix</span>
-                    <i class="bi bi-check-circle-fill text-brand-warning"></i>
+                  <div class="card-body d-flex justify-content-between align-items-center">
+                     <i class="bi bi-check-circle-fill text-brand-warning fs-1"></i>  Jimmy Hendrix  <i class="bi bi-heart"></i>
                   </div>
                 </div>
                 <div class="card shadow-sm mt-3">
-                  <div class="card-body">
-                    <strong>300+ components</strong><br />Built to be
-                    customized.
+                   <div class="card-body d-flex justify-content-between align-items-center">
+                     <i class="bi bi-check-circle-fill text-success fs-1"></i>
+                      300+ components <br />Built to be customized.
+                   </div>
                   </div>
-                </div>
               </div>
-
               <div class="col-md-6">
-                <div class="card text-center p-4 shadow-sm mb-3">
+                <div class="card text-center p-5 shadow-sm">
                   <img
                     src="assets/airbnb.svg"
-                    height="40"
+                    height="50"
+                    class="mb-3"
                     alt="Airbnb"
-                    class="mb-2"
                   />
-                  <div class="text-warning">★★★★★</div>
-                  <small class="text-muted">4.95 out of 5 · 23 reviews</small>
+                  <div class="text-warning my-2">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star text-dark"></i>
+                  </div>
+                  <strong>4.95 out of 5 stars</strong>
+                  <small class="text-muted"> from 23 reviews</small>
                 </div>
-                <div class="card p-4 shadow-sm text-center">
-                  <img
+                <div class="card d-flex justify-content-between align-items-center my-3 p-5">
+                    <img
                     src="assets/company_01.png"
                     width="60"
                     height="60"
-                    alt=""
-                    class="rounded-circle mb-2"
-                  />
-                  <strong>Website UI Kit</strong>
-                </div>
+                    class="mb-3 img-fluid rounded-circle"
+                    alt="websiteUI"
+                    />
+                    <h4>Website UI Kit</h4>
+                    <div class="my-4">
+                        <img src="assets/person_01.jpg" 
+                        class="rounded-circle border border-1 border-white" 
+                        alt="people" 
+                        width="40" 
+                        height="40">
+                         <img src="assets/person_02.jpg" 
+                        class="rounded-circle border border-1 border-white" 
+                        alt="people" 
+                        width="40" 
+                        height="40">
+                         <img src="assets/person_03.jpg" 
+                        class="rounded-circle border border-1 border-white" 
+                        alt="people" 
+                        width="40" 
+                        height="40">
+                    </div>
+                    <div class="text-dark">
+                        <i class="p-2 bi bi-hand-thumbs-up-fill"></i>
+                        <i class="p-2 bi bi-infinity"></i>
+                        <i class="p-2 bi bi-heart"></i>
+                    </div>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-6">
+        </div>
+         <div class="col-lg-6 col-12">
             <span class="badge badge-brand-primary mb-3">Technology</span>
             <h2 class="fw-bold">
-              We use the latest technologies<br class="d-none d-lg-block" />on
-              the market
+              We use the latest <br />
+              technologies on the market
             </h2>
-            <p class="text-muted mb-4">
-              Carefully selected tools power scalable, modern products.
+            <p class="text-muted mb-4">Get components and examples, including tons of variables that will help you grow your business.
             </p>
-            <a
-              href="https://www.odoo.com/app/website"
-              class="fw-semibold link-primary text-decoration-none"
-              target="_blank"
-            >
+            <a href="https://www.odoo.com/app/website" class="fw-semibold link-primary text-decoration-none" target="_blank">
               See case studies <i class="bi bi-arrow-right ms-1"></i>
             </a>
           </div>
-        </div>
       </div>
     </section>
-
-    <section id="download" class="py-5">
+    <!-- "what it's good" in the download section:
+     there's a primary CTA buttons that invites to download the "app", message reinforced by the image -->
+    <section class="py-5" id="download">
       <div class="container">
-        <div class="row align-items-center g-5 py-5">
-          <div class="col-lg-6">
+        <div class="row align-items-center g-5 py-5 mb-5">
+          <div class="col-lg-6 col-12">
             <span class="badge badge-brand-warning mb-3">Easy to install</span>
             <h2 class="fw-bold">Download, install and run.</h2>
-            <p class="text-muted mb-4">
-              Get components and examples to grow your business.
+            <p class="text-muted mb-5">
+             Get components and examples, including tons of variables <br /> that will help you grow your business.
             </p>
 
-            <div class="d-flex gap-3 flex-wrap">
-              <a
-                href="https://www.apple.com/app-store/"
+           <div class="d-flex gap-3 flex-wrap">
+            <a
+                href="https://www.apple.com/mx/app-store/"
                 target="_blank"
                 class="btn btn-dark d-flex align-items-center px-3"
-              >
+            >
                 <i class="bi bi-apple fs-1 me-3"></i>
-                <span class="text-start"
-                  ><small>Download on the</small
-                  ><strong class="d-block">App Store</strong></span
-                >
-              </a>
-              <a
+                <span class="text-start lh-sm">
+                <small class="d-block">Download on the</small>
+                <strong class="d-block">App Store</strong>
+                </span>
+            </a>
+
+            <a
                 href="https://play.google.com"
                 target="_blank"
                 class="btn btn-dark d-flex align-items-center px-3"
-              >
+            >
                 <i class="bi bi-google-play fs-3 me-3"></i>
-                <span class="text-start"
-                  ><small>Download on the</small
-                  ><strong class="d-block">Play Store</strong></span
-                >
-              </a>
+                <span class="text-start lh-sm">
+                <small class="d-block">Download on the</small>
+                <strong class="d-block">Play Store</strong>
+                </span>
+            </a>
             </div>
+
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-12">
             <div class="position-relative">
-              <img
-                src="assets/img_03.jpg"
-                class="img-fluid rounded-4"
-                alt="App preview"
-              />
-              <a
-                href="https://www.youtube.com/@Odoo"
-                class="btn btn-light btn-sm position-absolute top-0 start-0 m-3"
-                target="_blank"
-              >
+              <img src="assets/img_03.jpg" class="img-fluid rounded-4" />
+              <a href="https://www.odoo.com/slides/slide/navigate-in-odoo-606?fullscreen=1"
+                class="btn btn-light btn-sm position-absolute top-0 start-0 m-3" target="_blank" >
                 <i class="bi bi-play-fill me-1"></i> Play video
               </a>
             </div>
           </div>
         </div>
 
-        <div class="infinite-card text-white">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <h2 class="fw-bold">Infinite solutions</h2>
-              <p>
-                Everything you need to turn your ideas into incredible products.
-              </p>
-            </div>
-            <div class="col-lg-4 text-lg-end">
-              <a
-                href="https://www.odoo.com"
-                class="btn btn-light fw-semibold"
-                target="_blank"
-                >Learn more</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <section class="infinite-card text-white py-5">
+            <div class="container">
+                <div class="row align-items-center gy-3">
+                    <div class="col-lg-8">
+                    <h2 class="fw-bold">Infinite solutions</h2>
+                    <p class="mb-0">Intuitive markup, powerful and lightning-fast build tools, <br />everything you need to turn your ideas into incredible products. </p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="https://www.odoo.com/slides/tag/odoo-tutorials-9" class="btn btn-light fw-semibold" target="_blank">
+                        Learn more <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
 
+                </div>
+            </div>
+        </section>
+        </div>
+    </section>
+    <!--"what works on the awards section": avoiding JS and just using bootstrap for the hover saves time-->
+    <section class="awards py-5 mb-5" id="awards">
+        <div class="container">
+            <span class="badge badge-brand-primary mb-3">Awards</span>
+            <p class="mb-5 ">Awards for design, creativity and innovation on the Internet</p>
+            <div class="row g-4 d-flex justify-content-center py-5">
+                <div class="col-12 col-md-4 col-lg">
+                    <div class="award-card text-center shadow-sm ">
+                         <img
+                            src="assets/airbnb.svg"
+                            height="50"
+                            class="mb-3"
+                            alt="Airbnb"
+                        />
+                        <div class="text-warning myb-2">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star text-dark"></i>
+                        </div>
+                        <strong>4.95 out of 5 stars</strong>
+                        <small class="text-muted"> from 23 reviews</small>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg">
+                    <div class="award-card award-raised text-center shadow-sm">
+                         <img
+                            src="assets/amazon.svg"
+                            height="50"
+                            class="mb-3"
+                            alt="Amazon"
+                        />
+                        <p class="mb-3">They build modern-looking websites easily using Tabs.</p>
+                         <a href="#" class="fw-semibold link text-dark"> Learn more</a>
+                        </div>
+                </div>
+                 <div class="col-12 col-md-4 col-lg">
+                    <div class="award-card text-center shadow-sm">
+                         <img
+                            src="assets/slack.svg"
+                            height="50"
+                            class="mb-3"
+                            alt="Slack"
+                        />
+                        <p class="mb-3">They build modern-looking websites easily using Tabs.</p>
+                         <a href="#" class="fw-semibold link text-dark"> Learn more</a>
+                        </div>
+                </div>
+                 <div class="col-12 col-md-4 col-lg">
+                    <div class="award-card award-raised text-center shadow-sm ">
+                         <img
+                            src="assets/spotify.svg"
+                            height="50"
+                            class="mb-3"
+                            alt="Spotify"
+                        />
+                        <div class="text-warning myb-2">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star text-dark"></i>
+                        </div>
+                        <strong>4.95 out of 5 stars</strong>
+                        <small class="text-muted"> from 23 reviews</small>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg">
+                    <div class="award-card text-center shadow-sm">
+                         <img
+                            src="assets/paypal.svg"
+                            height="50"
+                            class="mb-3"
+                            alt="PayPal"
+                        />
+                        <p class="mb-3">They build modern-looking websites easily using Docker.</p>
+                         <a href="#" class="fw-semibold link text-dark"> Learn more</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- "faq worth it": Two columns reduce scroll fatigue -->
+    <section class="faq py-5 mb-5" id="faq">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+            <h2 class="fw-bold">Helpful answers</h2>
+            <p class="text-muted">Start building fast, beautiful, and modern-looking websites in no time.</p>
+            </div>
+
+            <div class="row g-5 ">
+                <div class="col-lg-6 col-12">
+                    <div class="accordion" id="faqLeft">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faqOne"
+                        >  
+                        <div class="">
+                            <i class="bi bi-file-earmark"></i>
+                        Which license do I need?
+                        </div>
+
+                            <span class="accordion-icon">
+                                <i class="bi bi-plus-lg icon-plus"></i>
+                                <i class="bi bi-dash-lg icon-minus"></i>
+                            </span>
+                        </button>
+                        </h2>
+                        <div id="faqOne" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                        <div class="accordion-body">Choose a license depending on your project scale and distribution.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo"
+                        >  
+                        <div class="">
+                            <i class="bi bi-lock"></i>
+                        How do I get access to my database?
+                        </div>
+
+                            <span class="accordion-icon">
+                                <i class="bi bi-plus-lg icon-plus"></i>
+                                <i class="bi bi-dash-lg icon-minus"></i>
+                            </span>
+                        </button>
+                        </h2>
+                        <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                        <div class="accordion-body">Secure credentials are available in your account dashboard.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faqThree"
+                        >  
+                        <div class="">
+                            <i class="bi bi-folder"></i>
+                        How do I see previous orders?
+                        </div>
+
+                            <span class="accordion-icon">
+                                <i class="bi bi-plus-lg icon-plus"></i>
+                                <i class="bi bi-dash-lg icon-minus"></i>
+                            </span>
+                        </button>
+                        </h2>
+                        <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                        <div class="accordion-body">Secure credentials are available in your account dashboard.</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                    <div class="accordion" id="faqRight">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faqFour"
+                        >  
+                        <div class="">
+                            <i class="bi bi-file-earmark"></i>
+                        Which license do I need?
+                        </div>
+
+                            <span class="accordion-icon">
+                                <i class="bi bi-plus-lg icon-plus"></i>
+                                <i class="bi bi-dash-lg icon-minus"></i>
+                            </span>
+                        </button>
+                        </h2>
+                        <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                        <div class="accordion-body">Choose a license depending on your project scale and distribution.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faqFive"
+                        >  
+                        <div class="">
+                            <i class="bi bi-lock"></i>
+                        How do I get access to my database?
+                        </div>
+
+                            <span class="accordion-icon">
+                                <i class="bi bi-plus-lg icon-plus"></i>
+                                <i class="bi bi-dash-lg icon-minus"></i>
+                            </span>
+                        </button>
+                        </h2>
+                        <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                        <div class="accordion-body">Secure credentials are available in your account dashboard.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex justify-content-between align-items-center" 
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faqSix"
+                        >  
+                        <div class="">
+                            <i class="bi bi-folder"></i>
+                        How do I see previous orders?
+                        </div>
+
+                            <span class="accordion-icon">
+                                <i class="bi bi-plus-lg icon-plus"></i>
+                                <i class="bi bi-dash-lg icon-minus"></i>
+                            </span>
+                        </button>
+                        </h2>
+                        <div id="faqSix" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                        <div class="accordion-body">Secure credentials are available in your account dashboard.</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="row">
+                <div class="text-center mt-5">
+                    <p class="fw-bold">I want to start a new project.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a class="btn btn-primary">Buy now <i class="bi bi-arrow-right ms-1"></i></a>
+                        <a class="btn btn-light">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+     <!-- "what works well": the credit card background can be reused here, so we have consistency classes
+     also this is a functional footer with clear hierarchy -->
     <footer class="footer-skew py-5 text-white">
       <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-4">
-            <img
-              src="assets/odoo-white.svg"
-              height="24"
-              alt="Odoo"
-              class="mb-3"
-            />
-            <p class="small text-white-50">
-              Odoo brings the best development experience to designers and
-              developers.
-            </p>
-          </div>
-
-          <div class="col-6 col-lg-2">
-            <h6 class="fw-semibold">Company</h6>
-            <ul class="list-unstyled">
-              <li>
-                <a href="https://www.odoo.com/about" target="_blank">About</a>
-              </li>
-              <li>
-                <a href="https://www.odoo.com/jobs" target="_blank">Careers</a>
-              </li>
-              <li>
-                <a href="https://www.odoo.com/contactus" target="_blank"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
+            <div class="row gy-4 align-items-center justify-content-between">
+                    <div class="col-lg-8 col-">
+                        <h4 class="fw-bold">Brilliant solutions for your ideas</h4>
+                        <p class="mb-0">Modern-looking websites.</p>
+                    </div>
+                    <div class="col-lg-4 col-">
+                        <div class="row g-1 text-lg-end">
+                            <div class="col- col-lg-6">
+                                <a href="#" class="btn btn-light text-primary"><i class="bi bi-file-break"></i> Documentation</a>
+                            </div>
+                            <div class="col- col-lg-6">
+                                <a href="#" class="btn btn-primary">Purchase now </a>
+                            </div>
+                        </div>
+                    </div>
         </div>
 
+           
         <hr class="my-4" />
+        <div class="row gy-4">
+          <div class="col-lg-6 col-12">
+            <img src="assets/odoo-white.svg" height="24" class="mb-3" />
+            <p class="small text-white-50">Odoo attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects. </p>
+            <div class="d-flex justify-content-around align-items-center">
+                <i class="bi bi-dribbble"></i>
+                <i class="bi bi-github"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+            </div>
+        </div>
+            <div class="col-12 col-lg-2">
+            <h6 class="fw-semibold mb-3">Account</h6>
+            <ul class="list-unstyled footer-links text-white">
+              <li><a href="https://www.odoo.com/web/login" target="_blank"   >Profile</a></li>
+              <li><a href="https://www.odoo.com/web/login" target="_blank"  >Settings</a></li>
+              <li><a href="https://www.odoo.com/pricing" target="_blank"  >Billing</a></li>
+              <li><a href="https://www.odoo.com/web/login" target="_blank"  >Notifications</a></li>
+            </ul>
+          </div>
 
+          <div class="col-12 col-lg-2">
+            <h6 class="fw-semibold mb-3">About</h6>
+            <ul class="list-unstyled footer-links text-white">
+              <li><a href="https://www.odoo.com/page/developers-on-demand"   target="_blank">Services</a></li>
+              <li><a href="https://www.odoo.com/pricing"   target="_blank">Pricing</a></li>
+              <li><a href="https://www.odoo.com/contactus"   target="_blank">Contact</a></li>
+              <li><a href="https://www.odoo.com/jobs"   target="_blank">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-2">
+            <h6 class="fw-semibold mb-3">Company</h6>
+            <ul class="list-unstyled footer-links text-white">
+              <li><a href="https://www.odoo.com/forum"   target="_blank">Community</a></li>
+              <li><a href="https://www.odoo.com/appointment"   target="_blank">Help center</a></li>
+              <li><a href="https://www.odoo.com/help"   target="_blank">Support</a></li>
+            </ul>
+          </div>
+      
+
+          
+        </div>
+        <hr class="my-4" />
         <div class="d-flex justify-content-between small">
           <span>© Odoo. All rights reserved.</span>
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item">
-              <a href="https://www.odoo.com/legal" target="_blank">Terms</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.odoo.com/privacy" target="_blank">Privacy</a>
-            </li>
+          <ul class="list-inline mb-0 footer-legal">
+            <li class="list-inline-item"><a href="https://www.odoo.com/legal"    target="_blank">Terms</a></li>
+            <li class="list-inline-item"><a href="https://www.odoo.com/privacy"    target="_blank">Privacy</a></li>
+            <li class="list-inline-item"><a href="https://www.odoo.com/security"    target="_blank">Cookies</a></li>
           </ul>
         </div>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
