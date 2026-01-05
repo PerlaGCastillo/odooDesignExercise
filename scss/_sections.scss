@@ -10,29 +10,20 @@
   width: 90%;
   margin-left: -1.5rem;
   padding: 2rem 2rem 2.5rem;
-  position: relative;
-  z-index: 1;
-
   background: rgba(255, 255, 255, 0.95);
   border-radius: $radius-sm;
-
-  small {
-    color: #6c757d;
-  }
 }
 
 .tools-list li {
   padding: $radius-lg;
-  font-size: 0.95rem;
   border-bottom: 1.5px solid $color-warning;
 }
 
 .tools-image {
-  width: 62%;
   position: absolute;
   top: -1.25rem;
   right: -2rem;
-  z-index: 2;
+  width: 62%;
 }
 
 .tools-play {
@@ -41,45 +32,7 @@
   right: $radius-md;
 }
 
-.tools-card::after {
-  content: "";
-  width: 120px;
-  height: 80px;
-  position: absolute;
-  right: -6rem;
-  bottom: -3rem;
-  border-bottom: 2px dashed rgba($color-warning, 0.4);
-  border-right: 2px dashed rgba($color-warning, 0.4);
-  border-radius: 0 0 50px 0;
-}
-
 .awards {
-  position: relative;
   padding: 6rem 0 8rem;
   background: #f5f4f4;
-  z-index: 1;
-}
-
-.awards::before {
-  content: "";
-  width: 100%;
-  height: 6rem;
-  position: absolute;
-  bottom: -5rem;
-  left: 0;
-
-  background: #f5f4f4;
-  transform: skewY(-2deg);
-  transform-origin: bottom left;
-  z-index: -1;
-}
-
-.faq {
-  margin-top: 8rem;
-}
-.section-tools,
-.section-features {
-  position: relative;
-  z-index: 1;
-  background: #fff;
 }

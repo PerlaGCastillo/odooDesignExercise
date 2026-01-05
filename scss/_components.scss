@@ -23,7 +23,6 @@
 }
 
 .infinite-card {
-  color: #fff;
   background: $color-secondary;
   border-radius: 0 5rem;
   padding: 3rem 5rem;
@@ -33,72 +32,9 @@
   background: $color-warning;
   color: #111;
 }
-
 .badge-brand-success {
   background: $color-success;
 }
-
 .badge-brand-primary {
   background: $color-primary;
-}
-
-.award-card {
-  height: 17rem;
-  background: #fff;
-  padding: 2.5rem 2rem;
-  border-radius: 1rem;
-  border: 1px solid #eef0f3;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-
-  p {
-    font-size: 0.9rem;
-  }
-
-  a {
-    margin-top: auto;
-  }
-
-  &:hover {
-    background-color: rgba(white, 0.4);
-    box-shadow: 0 12px 30px rgba($color-secondary, 0.4);
-  }
-}
-
-.award-raised {
-  transform: translateY(-2rem);
-}
-
-.text-brand-success {
-  color: $color-success !important;
-}
-
-.text-brand-warning {
-  color: $color-warning !important;
-}
-
-.accordion-button::after {
-  display: none;
-}
-
-.accordion-icon i {
-  font-size: 1rem;
-}
-
-.icon-minus {
-  display: none;
-}
-
-.accordion-button:not(.collapsed) .icon-plus {
-  display: none;
-}
-
-.accordion-button:not(.collapsed) .icon-minus {
-  display: inline-block;
 }
